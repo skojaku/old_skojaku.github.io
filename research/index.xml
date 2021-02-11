@@ -1,0 +1,50 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Researches on Home</title><link>https://example.org/research/</link><description>Recent content in Researches on Home</description><generator>Hugo 0.64.0 -- gohugo.io</generator><language>en</language><managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor><webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster><copyright>Sadamori Kojaku — All rights reserved.</copyright><lastBuildDate>Mon, 11 Feb 2019 19:27:37 +1000</lastBuildDate><atom:link href="https://example.org/research/index.xml" rel="self" type="application/rss+xml"/><item><title>Constructing networks from correlation matrices</title><link>https://example.org/research/correlation-matrix/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/correlation-matrix/</guid><description>&lt;p>*S. Kojaku and N. Masuda. Proceedings of the Royal Society A, 475, 2231 (2019)*&lt;br>
+&lt;em>Naoki Masuda, Sadamori Kojaku, Yukie Sano. Physical Review E, 98, 012312 (2018)&lt;/em>&lt;/p>
+&lt;p>Many networks of scientific interest have been constructed from correlation matrices.
+Examples include protein interaction networks, gene co-expression networks, functional brain networks, climate networks and asset graphs.
+In correlation networks, the edges indicate nontrivial correlations between the features of the nodes.
+A widely accepted approach for constructing networks from correlation matrices is the thresholding; one places an edge between two nodes if the correlation is larger than a threshold.
+However, the thresholding may induce spurious edges in the generated networks because a large correlation may be induced by a factor irrelevant to the node pair such as a global trend and pseudo correlations.
+An example is a large correlation between ice cream sale and murder rate; people buy more ice cream and interact with more people when it is hotter.&lt;/p>
+&lt;p>We developed an algorithm for constructing networks from correlation matrices, which we refer to as &lt;a href="https://scola.readthedocs.io/en/latest/">Scola&lt;/a>.
+A key feature of the algorithm is to use the null models for correlation matrices, based on which we decide whether to place edges between nodes or not.
+In other words, we place edges between nodes whose correlations are &lt;em>unexpected&lt;/em> for the null models.
+Users can run the algorithm with a null model of interest or let the algorithm to choose statistically the best null model among candidate null models.
+For three economic data, the algorithm produces statistically better networks and more accurately predicts country-level product export volumes.&lt;/p>
+&lt;div align="center">
+&lt;img style="width:100%;max-width:800px;padding:5px" src="https://example.org/docs/threshold-networks/adj.png" title="Correlation networks">
+&lt;/div>
+&lt;br>
+**Figure**:
+Sample correlation matrices and networks for the product space data.
+The solid lines inside the matrices indicate the boundary between year *t* (first half) and year *t*+10 (second half).
+The node colour indicates the product type.
+The value of the PRODY index averaged over the nodes in the same type is shown in the parentheses.</description></item><item><title>Core-periphery structure of networks</title><link>https://example.org/research/core-periphery-structure/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/core-periphery-structure/</guid><description>&lt;p>*Sadamori Kojaku, Naoki Masuda. New Journal of Physics, 20, 043012 (2018)*&lt;br>
+&lt;em>Sadamori Kojaku, Naoki Masuda. Physical Revew E, 96, 052313 (2017)&lt;/em>&lt;/p>
+&lt;p>Core-periphery structure is a mesoscale structure of networks, where a core is a group of densely interconnected nodes, and a periphery is a group of sparsely interconnected nodes.
+Core-periphery structure has been found in various empirical networks such as social networks, biological networks and transportation networks [1, 2].
+Many studies have assumed that networks consist of one core and one periphery.&lt;br>
+However, networks may contain multiple core-periphery pairs.&lt;/p>
+&lt;p>We developed an algorithm to find multiple core-periphery pairs in networks [3].
+In the political blog network [4] shown in Fig. 1, the algorithm found two core-periphery pairs, each of which consists of the blogs sharing the same political agenda.
+We applied this algorithm or its variant to an inter-bank trade network [5], a maritime transportation network [6] and a short-text classification task [7].&lt;/p>
+&lt;p>We also showed that heterogeneous degree distributions alone explain single core-periphery structure [8]. In other words, when one says that a network is composed of a single core and a single periphery, hubs (i.e. nodes with large degrees, or the number of edges) are core nodes and nodes with small degrees are peripheral nodes. We proved that a core-periphery structure that is not merely explained by heterogeneous degree distributions necessarily involves at least three blocks of nodes. An example is a combination of a single core, a single periphery and a community, which yields three blocks. Another example is two core-periphery pairs, which yields four blocks in total. Based on this result, we extended our first algorithm [7] to find multiple core-periphery pairs in networks that are not merely explained by heterogeneous degree distributions [8].
+The extended algorithm allows one to find small-degree core nodes and large-degree peripheral nodes.&lt;/p>
+&lt;div align="center">
+&lt;img src="https://example.org/docs/core-periphery/poliblog.png" title="Core-periphery structure">
+&lt;/div>
+&lt;p>&lt;strong>Figure&lt;/strong>: Two core-periphery pairs in the political blog network detected by our algorithm.
+The filled or open circles indicate core nodes or peripheral nodes, respectively.&lt;br>
+The colour of each circle indicates the core-periphery pair to which the node belongs.
+The open circles with a grey border indicate nodes that do not belong to any core-periphery pair.&lt;/p>
+&lt;h5 id="a-namecprefareferences">&lt;a name="cpref">&lt;/a>References&lt;/h5>
+&lt;ol>
+&lt;li>P. Csermely, A. London, L.-Y. Wu, and B. Uzzi, Journal of Complex Networks, 1, 93 (2013) [&lt;a href="https://doi.org/10.1093/comnet/cnt016">link&lt;/a>]&lt;/li>
+&lt;li>M. P. Rombach, M. A. Porter, J. H. Fowler, P. J. Mucha, `SIAM Review, 59, 619-646 (2017) [&lt;a href="https://doi.org/10.1137/17M1130046">link&lt;/a>]&lt;/li>
+&lt;li>S. Kojaku and N. Masuda, Physical Review E, 96, 052313 (2017) [&lt;a href="//doi.org/10.1103/PhysRevE.96.052313">link&lt;/a>]&lt;/li>
+&lt;li>L. A. Adamic and N. Glance, in Proceedings of the 3rd International Workshop on Link Discovery, 36–43 (ACM, New York, USA, 2005) [&lt;a href="https://doi.org/10.1145/1134271.1134277">link&lt;/a>]&lt;/li>
+&lt;li>S. Kojaku, G. Cimini, G. Caldarelli, N. Masuda, Journal of Network Theory in Finance, 4, 33-51 (2018) [&lt;a href="https://doi.org/10.21314/JNTF.2018.044">link&lt;/a>]&lt;/li>
+&lt;li>X. Cui, S. Kojaku, N. Masuda, and D. Bollegala, in Proceedings of the 7th Joint Conference on Lexical and Computational Semantics, 225-264 (ACL, New Orleans, USA, 2018) [&lt;a href="https://doi.org/10.18653/v1/S18-2030">link&lt;/a>]&lt;/li>
+&lt;li>S. Kojaku, M. Xu, H. Xia, N. Masuda, `Preprint arXiv:1808.04549 (2018) [&lt;a href="https://arxiv.org/abs/1808.04549">link&lt;/a>]&lt;/li>
+&lt;li>S. Kojaku and N. Masuda, `New Journal of Physics 20, 043012 (2018) [&lt;a href="https://doi.org/10.1088/1367-2630/aab547">link&lt;/a>]&lt;/li>
+&lt;/ol></description></item></channel></rss>

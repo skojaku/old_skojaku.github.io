@@ -1,0 +1,29 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>profile on Home</title><link>https://example.org/tags/profile/</link><description>Recent content in profile on Home</description><generator>Hugo 0.64.0 -- gohugo.io</generator><language>en</language><managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor><webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster><copyright>Sadamori Kojaku — All rights reserved.</copyright><lastBuildDate>Mon, 11 Feb 2019 19:30:08 +1000</lastBuildDate><atom:link href="https://example.org/tags/profile/index.xml" rel="self" type="application/rss+xml"/><item><title>About me</title><link>https://example.org/about/</link><pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/about/</guid><description>&lt;h3 id="sadamori-kojaku">Sadamori Kojaku&lt;/h3>
+&lt;p>&lt;img style="width:30%;max-width:500px;float:right;padding:5px" src="https://example.org/images/skojaku-circle.png#floatright" />&lt;/p>
+&lt;p>Luddy School of Informatics, Computing, and Engineering,
+Indiana University Bloomington&lt;/p>
+&lt;h3 id="contact">Contact&lt;/h3>
+&lt;p>&lt;a href="mailto:skojaku@iu.edu">skojaku@iu.edu&lt;/a>&lt;/p>
+&lt;h3 id="cvdocscvcv-sadamori-kojakupdf">&lt;a href="https://example.org/docs/cv/cv-sadamori-kojaku.pdf">CV&lt;/a>&lt;/h3>
+&lt;h3 id="employment--education">Employment &amp;amp; Education&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>02/2020-present&lt;/strong>: Postdoctoral Fellow
+Indiana University, United States&lt;/li>
+&lt;li>&lt;strong>04/2019-01/2020&lt;/strong>: Research Associate
+Kobe University, Japan&lt;/li>
+&lt;li>&lt;strong>04/2016-03/2019&lt;/strong>: Research Associate (Postdoc) @University of Bristol, UK&lt;/li>
+&lt;li>&lt;strong>09/2015&lt;/strong>: Ph.d. in Computer science, Hokkaido University, Japan&lt;/li>
+&lt;li>&lt;strong>03/2012&lt;/strong>: M.A. in Information science, Hokkaido University, Japan&lt;/li>
+&lt;/ul>
+&lt;h3 id="miscellaneous">Miscellaneous&lt;/h3>
+&lt;ul>
+&lt;li>Born in 01/01/1988&lt;/li>
+&lt;li>Languages: English and Japanese&lt;/li>
+&lt;li>Hobby:
+&lt;ul>
+&lt;li>Sailing: OP, Laser, 470 (start since age 8)&lt;/li>
+&lt;li>Kendo (a Japanese martial art; since age 15)&lt;/li>
+&lt;li>Marathon (since age 22)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

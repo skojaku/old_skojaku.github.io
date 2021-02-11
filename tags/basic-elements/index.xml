@@ -1,0 +1,176 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Basic Elements on Home</title><link>https://example.org/tags/basic-elements/</link><description>Recent content in Basic Elements on Home</description><generator>Hugo 0.64.0 -- gohugo.io</generator><language>en</language><managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor><webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster><copyright>Sadamori Kojaku — All rights reserved.</copyright><lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/basic-elements/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic HTML Elements</title><link>https://example.org/posts/basic-elements/</link><pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/posts/basic-elements/</guid><description>&lt;p>The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.&lt;/p>
+&lt;h2 id="headings">Headings&lt;/h2>
+&lt;p>Let&amp;rsquo;s start with all possible headings. The HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level and &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
+&lt;h1 id="heading-1">Heading 1&lt;/h1>
+&lt;h2 id="heading-2">Heading 2&lt;/h2>
+&lt;h3 id="heading-3">Heading 3&lt;/h3>
+&lt;h4 id="heading-4">Heading 4&lt;/h4>
+&lt;h5 id="heading-5">Heading 5&lt;/h5>
+&lt;h6 id="heading-6">Heading 6&lt;/h6>
+&lt;hr>
+&lt;h2 id="paragraph">Paragraph&lt;/h2>
+&lt;p>According to the &lt;a href="https://www.w3.org/TR/html5/dom.html#elements">HTML5 specification&lt;/a> by &lt;a href="https://www.w3.org/">W3C&lt;/a>, &lt;strong>HTML documents consist of a tree of elements and text&lt;/strong>. Each element is denoted in the source by a &lt;a href="https://www.w3.org/TR/html5/syntax.html#syntax-start-tags">start tag&lt;/a>, such as &lt;code>&amp;lt;body&amp;gt;&lt;/code>, and an &lt;a href="https://www.w3.org/TR/html5/syntax.html#syntax-end-tags">end tag&lt;/a>, such as &lt;code>&amp;lt;/body&amp;gt;&lt;/code>. (&lt;em>Certain start tags and end tags can in certain cases be omitted and are implied by other tags.&lt;/em>)&lt;/p>
+&lt;p>Elements can have attributes, which control how the elements work. For example, hyperlink are formed using the &lt;code>a&lt;/code> element and its &lt;code>href&lt;/code> attribute.&lt;/p>
+&lt;h2 id="list-types">List Types&lt;/h2>
+&lt;h3 id="ordered-list">Ordered List&lt;/h3>
+&lt;ol>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;/ol>
+&lt;h3 id="unordered-list">Unordered List&lt;/h3>
+&lt;ul>
+&lt;li>List item&lt;/li>
+&lt;li>Another item&lt;/li>
+&lt;li>And another item&lt;/li>
+&lt;/ul>
+&lt;h3 id="nested-list">Nested list&lt;/h3>
+&lt;ul>
+&lt;li>First item&lt;/li>
+&lt;li>Second item
+&lt;ul>
+&lt;li>Second item First subitem&lt;/li>
+&lt;li>Second item second subitem
+&lt;ul>
+&lt;li>Second item Second subitem First sub-subitem&lt;/li>
+&lt;li>Second item Second subitem Second sub-subitem&lt;/li>
+&lt;li>Second item Second subitem Third sub-subitem&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Second item Third subitem
+&lt;ol>
+&lt;li>Second item Third subitem First sub-subitem&lt;/li>
+&lt;li>Second item Third subitem Second sub-subitem&lt;/li>
+&lt;li>Second item Third subitem Third sub-subitem&lt;/li>
+&lt;/ol>
+&lt;/ul>
+&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;/ul>
+&lt;h3 id="definition-list">Definition List&lt;/h3>
+&lt;p>HTML also supports definition lists.&lt;/p>
+&lt;dl>
+&lt;dt>Blanco tequila&lt;/dt>
+&lt;dd>The purest form of the blue agave spirit...&lt;/dd>
+&lt;dt>Reposado tequila&lt;/dt>
+&lt;dd>Typically aged in wooden barrels for between two and eleven months...&lt;/dd>
+&lt;/dl>
+&lt;h2 id="blockquotes">Blockquotes&lt;/h2>
+&lt;p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code>footer&lt;/code> or &lt;code>cite&lt;/code> element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p>
+&lt;blockquote>
+&lt;p>Quoted text.
+This line is part of the same quote.
+Also you can &lt;em>put&lt;/em> &lt;strong>Markdown&lt;/strong> into a blockquote.&lt;/p>
+&lt;/blockquote>
+&lt;p>Blockquote with a citation.&lt;/p>
+&lt;blockquote>
+&lt;p>My goal wasn't to make a ton of money. It was to build good computers. I only started the company when I realized I could be an engineer forever.&lt;/p>
+&lt;footer>— &lt;cite>Steve Wozniak&lt;/cite>&lt;/footer>
+&lt;/blockquote>
+&lt;p>According to Mozilla&amp;rsquo;s website, &lt;q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0 was released in 2004 and became a big success.&lt;/q>&lt;/p>
+&lt;h2 id="tables">Tables&lt;/h2>
+&lt;p>Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports them.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>ID&lt;/th>
+&lt;th>Make&lt;/th>
+&lt;th>Model&lt;/th>
+&lt;th>Year&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>1&lt;/td>
+&lt;td>Honda&lt;/td>
+&lt;td>Accord&lt;/td>
+&lt;td>2009&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2&lt;/td>
+&lt;td>Toyota&lt;/td>
+&lt;td>Camry&lt;/td>
+&lt;td>2012&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>3&lt;/td>
+&lt;td>Hyundai&lt;/td>
+&lt;td>Elantra&lt;/td>
+&lt;td>2010&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Colons can be used to align columns.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th align="left">Tables&lt;/th>
+&lt;th align="center">Are&lt;/th>
+&lt;th align="right">Cool&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td align="left">align: left&lt;/td>
+&lt;td align="center">align: center&lt;/td>
+&lt;td align="right">align: right&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td align="left">align: left&lt;/td>
+&lt;td align="center">align: center&lt;/td>
+&lt;td align="right">align: right&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td align="left">align: left&lt;/td>
+&lt;td align="center">align: center&lt;/td>
+&lt;td align="right">align: right&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>You can also use inline Markdown.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Inline&lt;/th>
+&lt;th>Markdown&lt;/th>
+&lt;th>In&lt;/th>
+&lt;th>Table&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;em>italics&lt;/em>&lt;/td>
+&lt;td>&lt;strong>bold&lt;/strong>&lt;/td>
+&lt;td>&lt;del>strikethrough&lt;/del>&lt;/td>
+&lt;td>&lt;code>code&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="code">Code&lt;/h2>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span> &lt;span class="na">lang&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;UTF-8&amp;#34;&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Example HTML5 Document&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Test&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="cp">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">html&lt;/span> &lt;span class="na">lang&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;en&amp;#34;&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">meta&lt;/span> &lt;span class="na">charset&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;UTF-8&amp;#34;&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Example HTML5 Document&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">head&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Test&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">p&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">body&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="p">/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;h2 id="other-stuff--abbr-sub-sup-kbd-etc">Other stuff — abbr, sub, sup, kbd, etc.&lt;/h2>
+&lt;p>&lt;abbr title="Graphics Interchange Format">GIF&lt;/abbr> is a bitmap image format.&lt;/p>
+&lt;p>H&lt;sub>2&lt;/sub>O&lt;/p>
+&lt;p>C&lt;sub>6&lt;/sub>H&lt;sub>12&lt;/sub>O&lt;sub>6&lt;/sub>&lt;/p>
+&lt;p>X&lt;sup>n&lt;/sup> + Y&lt;sup>n&lt;/sup> = Z&lt;sup>n&lt;/sup>&lt;/p>
+&lt;p>Press &lt;kbd>X&lt;/kbd> to win. Or press &lt;kbd>&lt;kbd>CTRL&lt;/kbd>+&lt;kbd>ALT&lt;/kbd>+&lt;kbd>F&lt;/kbd>&lt;/kbd> to show FPS counter.&lt;/p>
+&lt;p>&lt;mark>As a unit of information in information theory, the bit has alternatively been called a shannon&lt;/mark>, named after Claude Shannon, the founder of field of information theory.&lt;/p></description></item></channel></rss>

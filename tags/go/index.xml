@@ -1,0 +1,286 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>go on Home</title><link>https://example.org/tags/go/</link><description>Recent content in go on Home</description><generator>Hugo 0.64.0 -- gohugo.io</generator><language>en</language><managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor><webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster><copyright>Sadamori Kojaku — All rights reserved.</copyright><lastBuildDate>Wed, 02 Apr 2014 23:42:05 +0100</lastBuildDate><atom:link href="https://example.org/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo</title><link>https://example.org/posts/hugoisforlovers/</link><pubDate>Wed, 02 Apr 2014 23:42:05 +0100</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/posts/hugoisforlovers/</guid><description>&lt;h2 id="step-1-install-hugo">Step 1. Install Hugo&lt;/h2>
+&lt;p>Go to &lt;a href="https://github.com/spf13/hugo/releases">Hugo releases&lt;/a> and download the
+appropriate version for your OS and architecture.&lt;/p>
+&lt;p>Save it somewhere specific as we will be using it in the next step.&lt;/p>
+&lt;p>More complete instructions are available at &lt;a href="https://gohugo.io/getting-started/installing/">Install Hugo&lt;/a>&lt;/p>
+&lt;h2 id="step-2-build-the-docs">Step 2. Build the Docs&lt;/h2>
+&lt;p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p>
+&lt;p>Follow the following steps:&lt;/p>
+&lt;ol>
+&lt;li>Clone the &lt;a href="https://github.com/spf13/hugo">Hugo repository&lt;/a>&lt;/li>
+&lt;li>Go into the repo&lt;/li>
+&lt;li>Run hugo in server mode and build the docs&lt;/li>
+&lt;li>Open your browser to http://localhost:1313&lt;/li>
+&lt;/ol>
+&lt;p>Corresponding pseudo commands:&lt;/p>
+&lt;pre>&lt;code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code>&lt;/pre>
+&lt;p>Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p>
+&lt;h2 id="step-3-change-the-docs-site">Step 3. Change the docs site&lt;/h2>
+&lt;p>Stop the Hugo process by hitting Ctrl+C.&lt;/p>
+&lt;p>Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p>
+&lt;pre>&lt;code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code>&lt;/pre>
+&lt;p>Open your &lt;a href="http://vim.spf13.com">favorite editor&lt;/a> and change one of the source
+content pages. How about changing this very file to &lt;em>fix the typo&lt;/em>. How about changing this very file to &lt;em>fix the typo&lt;/em>.&lt;/p>
+&lt;p>Content files are found in &lt;code>docs/content/&lt;/code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code>docs/content/overview/quickstart.md&lt;/code>.&lt;/p>
+&lt;p>Change and save this file.. Notice what happened in your terminal.&lt;/p>
+&lt;pre>&lt;code>&amp;gt; Change detected, rebuilding site
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code>&lt;/pre>
+&lt;p>Refresh the browser and observe that the typo is now fixed.&lt;/p>
+&lt;p>Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p>
+&lt;h2 id="step-4-have-fun">Step 4. Have fun&lt;/h2>
+&lt;p>The best way to learn something is to play with it.&lt;/p></description></item><item><title>(Hu)go Template Primer</title><link>https://example.org/posts/goisforlovers/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/posts/goisforlovers/</guid><description>&lt;p>Hugo uses the excellent &lt;a href="https://golang.org/">Go&lt;/a> &lt;a href="https://golang.org/pkg/html/template/">html/template&lt;/a> library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience that it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks you will find a lot of
+similarities in Go templates.&lt;/p>
+&lt;p>This document is a brief primer on using Go templates. The &lt;a href="https://golang.org/pkg/html/template/">Go docs&lt;/a>
+provide more details.&lt;/p>
+&lt;h2 id="introduction-to-go-templates">Introduction to Go Templates&lt;/h2>
+&lt;p>Go templates provide an extremely simple template language. It adheres to the
+belief that only the most basic of logic belongs in the template or view layer.
+One consequence of this simplicity is that Go templates parse very quickly.&lt;/p>
+&lt;p>A unique characteristic of Go templates is they are content aware. Variables and
+content will be sanitized depending on the context of where they are used. More
+details can be found in the &lt;a href="https://golang.org/pkg/html/template/">Go docs&lt;/a>.&lt;/p>
+&lt;h2 id="basic-syntax">Basic Syntax&lt;/h2>
+&lt;p>Golang templates are HTML files with the addition of variables and
+functions.&lt;/p>
+&lt;p>&lt;strong>Go variables and functions are accessible within {{ }}&lt;/strong>&lt;/p>
+&lt;p>Accessing a predefined variable &amp;ldquo;foo&amp;rdquo;:&lt;/p>
+&lt;pre>&lt;code>{{ foo }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Parameters are separated using spaces&lt;/strong>&lt;/p>
+&lt;p>Calling the add function with input of 1, 2:&lt;/p>
+&lt;pre>&lt;code>{{ add 1 2 }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Methods and fields are accessed via dot notation&lt;/strong>&lt;/p>
+&lt;p>Accessing the Page Parameter &amp;ldquo;bar&amp;rdquo;&lt;/p>
+&lt;pre>&lt;code>{{ .Params.bar }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Parentheses can be used to group items together&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if or (isset .Params &amp;quot;alt&amp;quot;) (isset .Params &amp;quot;caption&amp;quot;) }} Caption {{ end }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="variables">Variables&lt;/h2>
+&lt;p>Each Go template has a struct (object) made available to it. In hugo each
+template is passed either a page or a node struct depending on which type of
+page you are rendering. More details are available on the
+&lt;a href="https://example.org/layout/variables">variables&lt;/a> page.&lt;/p>
+&lt;p>A variable is accessed by referencing the variable name.&lt;/p>
+&lt;pre>&lt;code>&amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>Variables can also be defined and referenced.&lt;/p>
+&lt;pre>&lt;code>{{ $address := &amp;quot;123 Main St.&amp;quot;}}
+{{ $address }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="functions">Functions&lt;/h2>
+&lt;p>Go template ship with a few functions which provide basic functionality. The Go
+template system also provides a mechanism for applications to extend the
+available functions with their own. &lt;a href="https://example.org/layout/functions">Hugo template
+functions&lt;/a> provide some additional functionality we believe
+are useful for building websites. Functions are called by using their name
+followed by the required parameters separated by spaces. Template
+functions cannot be added without recompiling hugo.&lt;/p>
+&lt;p>&lt;strong>Example:&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ add 1 2 }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="includes">Includes&lt;/h2>
+&lt;p>When including another template you will pass to it the data it will be
+able to access. To pass along the current context please remember to
+include a trailing dot. The templates location will always be starting at
+the /layout/ directory within Hugo.&lt;/p>
+&lt;p>&lt;strong>Example:&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ template &amp;quot;chrome/header.html&amp;quot; . }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="logic">Logic&lt;/h2>
+&lt;p>Go templates provide the most basic iteration and conditional logic.&lt;/p>
+&lt;h3 id="iteration">Iteration&lt;/h3>
+&lt;p>Just like in Go, the Go templates make heavy use of range to iterate over
+a map, array or slice. The following are different examples of how to use
+range.&lt;/p>
+&lt;p>&lt;strong>Example 1: Using Context&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ range array }}
+{{ . }}
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 2: Declaring value variable name&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{range $element := array}}
+{{ $element }}
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 2: Declaring key and value variable name&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{range $index, $element := array}}
+{{ $index }}
+{{ $element }}
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;h3 id="conditionals">Conditionals&lt;/h3>
+&lt;p>If, else, with, or, &amp;amp; and provide the framework for handling conditional
+logic in Go Templates. Like range, each statement is closed with &lt;code>end&lt;/code>.&lt;/p>
+&lt;p>Go Templates treat the following values as false:&lt;/p>
+&lt;ul>
+&lt;li>false&lt;/li>
+&lt;li>0&lt;/li>
+&lt;li>any array, slice, map, or string of length zero&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Example 1: If&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if isset .Params &amp;quot;title&amp;quot; }}&amp;lt;h4&amp;gt;{{ index .Params &amp;quot;title&amp;quot; }}&amp;lt;/h4&amp;gt;{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 2: If -&amp;gt; Else&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if isset .Params &amp;quot;alt&amp;quot; }}
+{{ index .Params &amp;quot;alt&amp;quot; }}
+{{else}}
+{{ index .Params &amp;quot;caption&amp;quot; }}
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 3: And &amp;amp; Or&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if and (or (isset .Params &amp;quot;title&amp;quot;) (isset .Params &amp;quot;caption&amp;quot;)) (isset .Params &amp;quot;attr&amp;quot;)}}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 4: With&lt;/strong>&lt;/p>
+&lt;p>An alternative way of writing &amp;ldquo;if&amp;rdquo; and then referencing the same value
+is to use &amp;ldquo;with&amp;rdquo; instead. With rebinds the context &lt;code>.&lt;/code> within its scope,
+and skips the block if the variable is absent.&lt;/p>
+&lt;p>The first example above could be simplified as:&lt;/p>
+&lt;pre>&lt;code>{{ with .Params.title }}&amp;lt;h4&amp;gt;{{ . }}&amp;lt;/h4&amp;gt;{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Example 5: If -&amp;gt; Else If&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if isset .Params &amp;quot;alt&amp;quot; }}
+{{ index .Params &amp;quot;alt&amp;quot; }}
+{{ else if isset .Params &amp;quot;caption&amp;quot; }}
+{{ index .Params &amp;quot;caption&amp;quot; }}
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="pipes">Pipes&lt;/h2>
+&lt;p>One of the most powerful components of Go templates is the ability to
+stack actions one after another. This is done by using pipes. Borrowed
+from unix pipes, the concept is simple, each pipeline&amp;rsquo;s output becomes the
+input of the following pipe.&lt;/p>
+&lt;p>Because of the very simple syntax of Go templates, the pipe is essential
+to being able to chain together function calls. One limitation of the
+pipes is that they only can work with a single value and that value
+becomes the last parameter of the next pipeline.&lt;/p>
+&lt;p>A few simple examples should help convey how to use the pipe.&lt;/p>
+&lt;p>&lt;strong>Example 1 :&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if eq 1 1 }} Same {{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>is the same as&lt;/p>
+&lt;pre>&lt;code>{{ eq 1 1 | if }} Same {{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>It does look odd to place the if at the end, but it does provide a good
+illustration of how to use the pipes.&lt;/p>
+&lt;p>&lt;strong>Example 2 :&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ index .Params &amp;quot;disqus_url&amp;quot; | html }}
+&lt;/code>&lt;/pre>
+&lt;p>Access the page parameter called &amp;ldquo;disqus_url&amp;rdquo; and escape the HTML.&lt;/p>
+&lt;p>&lt;strong>Example 3 :&lt;/strong>&lt;/p>
+&lt;pre>&lt;code>{{ if or (or (isset .Params &amp;quot;title&amp;quot;) (isset .Params &amp;quot;caption&amp;quot;)) (isset .Params &amp;quot;attr&amp;quot;)}}
+Stuff Here
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>Could be rewritten as&lt;/p>
+&lt;pre>&lt;code>{{ isset .Params &amp;quot;caption&amp;quot; | or isset .Params &amp;quot;title&amp;quot; | or isset .Params &amp;quot;attr&amp;quot; | if }}
+Stuff Here
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="context-aka-the-dot">Context (aka. the dot)&lt;/h2>
+&lt;p>The most easily overlooked concept to understand about Go templates is that {{ . }}
+always refers to the current context. In the top level of your template this
+will be the data set made available to it. Inside of a iteration it will have
+the value of the current item. When inside of a loop the context has changed. .
+will no longer refer to the data available to the entire page. If you need to
+access this from within the loop you will likely want to set it to a variable
+instead of depending on the context.&lt;/p>
+&lt;p>&lt;strong>Example:&lt;/strong>&lt;/p>
+&lt;pre>&lt;code> {{ $title := .Site.Title }}
+{{ range .Params.tags }}
+&amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;{{ $baseurl }}/tags/{{ . | urlize }}&amp;quot;&amp;gt;{{ . }}&amp;lt;/a&amp;gt; - {{ $title }} &amp;lt;/li&amp;gt;
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;p>Notice how once we have entered the loop the value of {{ . }} has changed. We
+have defined a variable outside of the loop so we have access to it from within
+the loop.&lt;/p>
+&lt;h1 id="hugo-parameters">Hugo Parameters&lt;/h1>
+&lt;p>Hugo provides the option of passing values to the template language
+through the site configuration (for sitewide values), or through the meta
+data of each specific piece of content. You can define any values of any
+type (supported by your front matter/config format) and use them however
+you want to inside of your templates.&lt;/p>
+&lt;h2 id="using-content-page-parameters">Using Content (page) Parameters&lt;/h2>
+&lt;p>In each piece of content you can provide variables to be used by the
+templates. This happens in the &lt;a href="https://example.org/content/front-matter">front matter&lt;/a>.&lt;/p>
+&lt;p>An example of this is used in this documentation site. Most of the pages
+benefit from having the table of contents provided. Sometimes the TOC just
+doesn&amp;rsquo;t make a lot of sense. We&amp;rsquo;ve defined a variable in our front matter
+of some pages to turn off the TOC from being displayed.&lt;/p>
+&lt;p>Here is the example front matter:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">---
+title: &amp;#34;Permalinks&amp;#34;
+date: &amp;#34;2013-11-18&amp;#34;
+aliases:
+- &amp;#34;/doc/permalinks/&amp;#34;
+groups: [&amp;#34;extras&amp;#34;]
+groups_weight: 30
+notoc: true
+---
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Here is the corresponding code inside of the template:&lt;/p>
+&lt;pre>&lt;code> {{ if not .Params.notoc }}
+&amp;lt;div id=&amp;quot;toc&amp;quot; class=&amp;quot;well col-md-4 col-sm-6&amp;quot;&amp;gt;
+{{ .TableOfContents }}
+&amp;lt;/div&amp;gt;
+{{ end }}
+&lt;/code>&lt;/pre>
+&lt;h2 id="using-site-config-parameters">Using Site (config) Parameters&lt;/h2>
+&lt;p>In your top-level configuration file (eg, &lt;code>config.yaml&lt;/code>) you can define site
+parameters, which are values which will be available to you in chrome.&lt;/p>
+&lt;p>For instance, you might declare:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="k">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w">&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">CopyrightHTML&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Copyright &amp;amp;#xA9; 2013 John Doe. All Rights Reserved.&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TwitterUser&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;spf13&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">SidebarRecentLimit&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">5&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Within a footer layout, you might then declare a &lt;code>&amp;lt;footer&amp;gt;&lt;/code> which is only
+provided if the &lt;code>CopyrightHTML&lt;/code> parameter is provided, and if it is given,
+you would declare it to be HTML-safe, so that the HTML entity is not escaped
+again. This would let you easily update just your top-level config file each
+January 1st, instead of hunting through your templates.&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">{{if .Site.Params.CopyrightHTML}}&amp;lt;footer&amp;gt;
+&amp;lt;div class=&amp;#34;text-center&amp;#34;&amp;gt;{{.Site.Params.CopyrightHTML | safeHtml}}&amp;lt;/div&amp;gt;
+&amp;lt;/footer&amp;gt;{{end}}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>An alternative way of writing the &amp;ldquo;if&amp;rdquo; and then referencing the same value
+is to use &amp;ldquo;with&amp;rdquo; instead. With rebinds the context &lt;code>.&lt;/code> within its scope,
+and skips the block if the variable is absent:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">{{with .Site.Params.TwitterUser}}&amp;lt;span class=&amp;#34;twitter&amp;#34;&amp;gt;
+&amp;lt;a href=&amp;#34;https://twitter.com/{{.}}&amp;#34; rel=&amp;#34;author&amp;#34;&amp;gt;
+&amp;lt;img src=&amp;#34;/images/twitter.png&amp;#34; width=&amp;#34;48&amp;#34; height=&amp;#34;48&amp;#34; title=&amp;#34;Twitter: {{.}}&amp;#34;
+alt=&amp;#34;Twitter&amp;#34;&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/span&amp;gt;{{end}}
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Finally, if you want to pull &amp;ldquo;magic constants&amp;rdquo; out of your layouts, you can do
+so, such as in this example:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">&amp;lt;nav class=&amp;#34;recent&amp;#34;&amp;gt;
+&amp;lt;h1&amp;gt;Recent Posts&amp;lt;/h1&amp;gt;
+&amp;lt;ul&amp;gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{{.RelPermalink}}&amp;#34;&amp;gt;{{.Title}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+{{end}}&amp;lt;/ul&amp;gt;
+&amp;lt;/nav&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
