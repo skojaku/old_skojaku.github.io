@@ -1,8 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home</title><link>https://example.org/</link><description>Recent content on Home</description><generator>Hugo 0.64.0 -- gohugo.io</generator><language>en</language><managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor><webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster><copyright>Sadamori Kojaku — All rights reserved.</copyright><lastBuildDate>Mon, 11 Feb 2019 19:30:08 +1000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Publications</title><link>https://example.org/publications/</link><pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/publications/</guid><description>&lt;h5 id="cvdocscvcv-sadamori-kojakupdf">&lt;a href="https://example.org/docs/cv/cv-sadamori-kojaku.pdf">CV&lt;/a>&lt;/h5>
 &lt;h5 id="google-scholarhttpsscholargooglecomcitationsuseriywt4r4aaaajhlen">&lt;a href="https://scholar.google.com/citations?user=IyWt4R4AAAAJ&amp;amp;hl=en">Google Scholar&lt;/a>&lt;/h5>
 &lt;h2 id="preprints">Preprints&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Sadamori Kojaku&lt;/strong>, Giacomo Livan, and Naoki Masuda. Detecting citation cartels in journal networks.
+&lt;ul>
+&lt;li>&lt;a href="https://arxiv.org/abs/2009.09097">Preprint&lt;/a>], [&lt;a href="https://github.com/skojaku/journal-citation-cartels">Code&lt;/a>]&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="journal-papers">Journal papers&lt;/h2>
 &lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Laurent Hébert-Dufresne, Enys Mones, Sune Lehmann, Yong-Yeol Ahn. The effectiveness of backward contact tracing in networks. Nature Physics (2021).&lt;/p>
+&lt;ul>
+&lt;li>[&lt;a href="https://www.nature.com/articles/s41567-021-01187-2">Paper&lt;/a>], [&lt;a href="https://arxiv.org/abs/2005.02362">Preprint&lt;/a>], [ &lt;a href="https://github.com/yy/backward-contact-tracing">Code&lt;/a> ]&lt;a name="scola-ref">&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Naoki Masuda. Constructing networks by filtering correlation matrices: A null model approach, Proceedings of the Royal Society A, 475, 2231 (2019).&lt;/p>
 &lt;ul>
@@ -40,7 +53,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Naoki Masuda. Finding multiple core-periphery pairs in networks. Physical Revew E, 96, 052313 (2017)&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Naoki Masuda. Finding multiple core-periphery pairs in networks. Physical Review E, 96, 052313 (2017)&lt;/p>
 &lt;ul>
 &lt;li>[&lt;a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.052313">Paper&lt;/a>], [&lt;a href="https://arxiv.org/abs/1702.06903%22">Preprint&lt;/a>], [&lt;a href="http://www.naokimasuda.net/publ_e.html">MATLAB code&lt;/a>]&lt;/li>
 &lt;/ul>
@@ -54,13 +67,18 @@
 &lt;li>
 &lt;p>&lt;strong>幸若 完壮&lt;/strong>, 渡辺 浩太, 五十嵐 一. 合理的な忘却型Profit Sharing強化学習法. 電気学会論文誌Ｃ, 132, 448-454 (2012)&lt;/p>
 &lt;ul>
-&lt;li>[&lt;a href="https://www.jstage.jst.go.jp/article/ieejeiss/132/3/132_3_448/_article/-char/ja/">Paper&lt;/a>]
-\&lt;/li>
+&lt;li>[&lt;a href="https://www.jstage.jst.go.jp/article/ieejeiss/132/3/132_3_448/_article/-char/ja/">Paper&lt;/a>]&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="oral-presentations-and-posters">Oral presentations and posters&lt;/h2>
 &lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Attila Varga, Xiaoran Yan, Filipi N. Silva, Staša Milojević, Alessandro Flammini, and Yong-Yeol Ahn. The landscape of the COVID-19 research: A neural embedding approach. Netsci. Rome, Italy, 17-25 September (2020)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Giacomo Livan, and Naoki Masuda. Detecting citaion cartels in journal networks. Netsci. Rome, Italy, 17-25 September (2020)&lt;/p>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> ネットワークコアの検出アルゴリズムとその応用. ネットワーク科学セミナー. 統計数理研究所. 8.28-30 (2019)&lt;/p>
 &lt;/li>
@@ -71,48 +89,37 @@
 &lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Giulio Cimini, Guido Caldarelli, Naoki Masuda. Structural changes in the interbank market across the financial crisis from multiple core-periphery analysis. Netsci. Vermont, U.S., May 26-31 (2019) [&lt;a href="https://example.org/docs/netsci2019/netsci2019.pdf">slide&lt;/a>]&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. A generalised significance test for individual communities in networks. Netsci. Paris, France, June 11–15 (2018)
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. A generalised significance test for individual communities in networks. Netsci. Paris, France, June 11–15 (2018)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Xia Cui, &lt;strong>Sadamori Kojaku&lt;/strong>, Naoki Masuda and Danushka Bollegala. Solving feature spareness in text classification using core-periphery decomposition. In Proceedings of the 7th Joint Conference on Lexical and Computational Semantics, 225-264 (ACL, New Orleans, USA, 2018)
-\&lt;/p>
+&lt;p>Xia Cui, &lt;strong>Sadamori Kojaku&lt;/strong>, Naoki Masuda and Danushka Bollegala. Solving feature spareness in text classification using core-periphery decomposition. In Proceedings of the 7th Joint Conference on Lexical and Computational Semantics, 225-264 (ACL, New Orleans, USA, 2018)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Core-periphery structure in degree-heterogeneous networks. Netsci-X. Hangzhou, China (2018)
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Core-periphery structure in degree-heterogeneous networks. Netsci-X. Hangzhou, China (2018)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Multi-scale organisation of core-periphery structure in networks. 1st Laten American Conference on Complex Networks. Puebla, Mexico September 25-29 (2017) [poster]
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Multi-scale organisation of core-periphery structure in networks. 1st Laten American Conference on Complex Networks. Puebla, Mexico September 25-29 (2017) [poster]&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Core-periphery structure of networks: Consideration for random heterogeneous networks. Netsci. Indianapolis, Indiana, USA (2017) [poster]
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Core-periphery structure of networks: Consideration for random heterogeneous networks. Netsci. Indianapolis, Indiana, USA (2017) [poster]&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. An extension of modularity for finding multiple core/periphery structure in networks. Netsci-X. Tel Aviv, Israel January 15-18 (2017) [poster]
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. An extension of modularity for finding multiple core/periphery structure in networks. Netsci-X. Tel Aviv, Israel January 15-18 (2017) [poster]&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Finding multiple core-periphery structure with random walks. 5th International Workshop on Complex Networks and their Applications. Milan, Italy November 30-December 2 (2016)
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong> and Naoki Masuda. Finding multiple core-periphery structure with random walks. 5th International Workshop on Complex Networks and their Applications. Milan, Italy November 30-December 2 (2016)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Keigo Kimura, Mineichi Kudo, Lu Sun and &lt;strong>Sadamori Kojaku&lt;/strong>. Fast random k-labelsets for large-scale multi-label classification. 23rd International Conference on Pattern Recognition. Cancun, Mexico December 4-8 (2016)
-\&lt;/p>
+&lt;p>Keigo Kimura, Mineichi Kudo, Lu Sun and &lt;strong>Sadamori Kojaku&lt;/strong>. Fast random k-labelsets for large-scale multi-label classification. 23rd International Conference on Pattern Recognition. Cancun, Mexico December 4-8 (2016)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Community change detection in dynamic networks in noisy environment. 24th International Conference on World Wide Web. Florence, Italy, May 18 - 22 (2015)
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Community change detection in dynamic networks in noisy environment. 24th International Conference on World Wide Web. Florence, Italy, May 18 - 22 (2015)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Structual change point detection for social networks. The World Congress on Engineering. London, the United Kingdom, July 3-5 (2013)
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Structual change point detection for social networks. The World Congress on Engineering. London, the United Kingdom, July 3-5 (2013)&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Kota Watanabe and Hajime Igarashi. Adaptive profit sharing reinforcement learning for dynamic environment. 10th International Conference on Machine Learning and Applications and Workshops. Hawaii, the United States (2011)
-\&lt;/p>
+&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Kota Watanabe and Hajime Igarashi. Adaptive profit sharing reinforcement learning for dynamic environment. 10th International Conference on Machine Learning and Applications and Workshops. Hawaii, the United States (2011)&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h2 id="awards">Awards&lt;/h2>
@@ -123,11 +130,13 @@
 &lt;/ol>
 &lt;h2 id="referee-activities">Referee activities&lt;/h2>
 &lt;ol>
+&lt;li>Nature Communications&lt;/li>
 &lt;li>Journal of Complex Networks&lt;/li>
 &lt;li>Journal of Computational Social Science&lt;/li>
 &lt;li>PLOS ONE&lt;/li>
 &lt;li>Scientific Reports&lt;/li>
-&lt;/ol></description></item><item><title>Constructing networks from correlation matrices</title><link>https://example.org/research/correlation-matrix/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/correlation-matrix/</guid><description>&lt;p>*S. Kojaku and N. Masuda. Proceedings of the Royal Society A, 475, 2231 (2019)*&lt;br>
+&lt;li>PeerJ&lt;/li>
+&lt;/ol></description></item><item><title>Citaton cartels</title><link>https://example.org/research/citation-cartels/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/citation-cartels/</guid><description>&lt;p>Coming soon&lt;/p></description></item><item><title>Constructing networks from correlation matrices</title><link>https://example.org/research/correlation-matrix/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/correlation-matrix/</guid><description>&lt;p>*S. Kojaku and N. Masuda. Proceedings of the Royal Society A, 475, 2231 (2019)*&lt;br>
 &lt;em>Naoki Masuda, Sadamori Kojaku, Yukie Sano. Physical Review E, 98, 012312 (2018)&lt;/em>&lt;/p>
 &lt;p>Many networks of scientific interest have been constructed from correlation matrices.
 Examples include protein interaction networks, gene co-expression networks, functional brain networks, climate networks and asset graphs.
@@ -148,7 +157,7 @@ For three economic data, the algorithm produces statistically better networks an
 Sample correlation matrices and networks for the product space data.
 The solid lines inside the matrices indicate the boundary between year *t* (first half) and year *t*+10 (second half).
 The node colour indicates the product type.
-The value of the PRODY index averaged over the nodes in the same type is shown in the parentheses.</description></item><item><title>Core-periphery structure of networks</title><link>https://example.org/research/core-periphery-structure/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/core-periphery-structure/</guid><description>&lt;p>*Sadamori Kojaku, Naoki Masuda. New Journal of Physics, 20, 043012 (2018)*&lt;br>
+The value of the PRODY index averaged over the nodes in the same type is shown in the parentheses.</description></item><item><title>Contact tracing</title><link>https://example.org/research/contact-tracing/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/contact-tracing/</guid><description>&lt;p>Coming soon.&lt;/p></description></item><item><title>Core-periphery structure of networks</title><link>https://example.org/research/core-periphery-structure/</link><pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/research/core-periphery-structure/</guid><description>&lt;p>*Sadamori Kojaku, Naoki Masuda. New Journal of Physics, 20, 043012 (2018)*&lt;br>
 &lt;em>Sadamori Kojaku, Naoki Masuda. Physical Revew E, 96, 052313 (2017)&lt;/em>&lt;/p>
 &lt;p>Core-periphery structure is a mesoscale structure of networks, where a core is a group of densely interconnected nodes, and a periphery is a group of sparsely interconnected nodes.
 Core-periphery structure has been found in various empirical networks such as social networks, biological networks and transportation networks [1, 2].
