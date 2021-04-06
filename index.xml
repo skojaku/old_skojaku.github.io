@@ -200,24 +200,32 @@ The open circles with a grey border indicate nodes that do not belong to any cor
 &lt;li>X. Cui, S. Kojaku, N. Masuda, and D. Bollegala, in Proceedings of the 7th Joint Conference on Lexical and Computational Semantics, 225-264 (ACL, New Orleans, USA, 2018) [&lt;a href="https://doi.org/10.18653/v1/S18-2030">link&lt;/a>]&lt;/li>
 &lt;li>S. Kojaku, M. Xu, H. Xia, N. Masuda, `Preprint arXiv:1808.04549 (2018) [&lt;a href="https://arxiv.org/abs/1808.04549">link&lt;/a>]&lt;/li>
 &lt;li>S. Kojaku and N. Masuda, `New Journal of Physics 20, 043012 (2018) [&lt;a href="https://doi.org/10.1088/1367-2630/aab547">link&lt;/a>]&lt;/li>
-&lt;/ol></description></item><item><title>Code &amp; Data</title><link>https://example.org/code/</link><pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/code/</guid><description>&lt;h2 id="githubhttpsgithubcomskojaku">&lt;strong>&lt;a href="https://github.com/skojaku">Github&lt;/a>&lt;/strong>&lt;/h2>
-&lt;h2 id="code">Code&lt;/h2>
-&lt;h3 id="network-inference">Network inference&lt;/h3>
+&lt;/ol></description></item><item><title>Code &amp; Data</title><link>https://example.org/code/</link><pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/code/</guid><description>&lt;p>I believe coding is the second most critical part of my work following writing, which not only implements an idea but also helps me understand and advance the idea.
+For this reason, I have been writing a lot of code including those that are not directly relevant to my work, which are not listed in the following.
+All my code can be found in &lt;strong>&lt;a href="https://github.com/skojaku">Github&lt;/a>&lt;/strong>&lt;/p>
+&lt;h3 id="graph-embedding">Graph embedding&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Scola&lt;/strong> (Network inference from correlational data)
+&lt;li>&lt;strong>emlens&lt;/strong>
 &lt;ul>
-&lt;li>Pure Python code&lt;/li>
-&lt;li>[&lt;a href="https://scola.readthedocs.io/en/latest/">doc&lt;/a>], [&lt;a href="https://github.com/skojaku/scola">source&lt;/a>], [&lt;a href="https://arxiv.org/abs/1903.10805">paper&lt;/a>]&lt;/li>
+&lt;li>A lightweight python library for exploring embedding&lt;/li>
+&lt;li>[&lt;a href="https://emlens.readthedocs.io/en/latest/">doc&lt;/a>], [&lt;a href="https://github.com/skojaku/emlens">source&lt;/a>]&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="core-periphery-structure">Core-periphery structure&lt;/h3>
+&lt;h3 id="network-analysis">Network analysis&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>KM algorithm&lt;/strong> (Algorithm for detecting core-periphery structure in networks)
+&lt;li>
+&lt;p>&lt;strong>Scola&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>C++ code with a Python wrapper&lt;/li>
-&lt;li>Also include other algorithms, e.g., the Borgatti-Everett algorithm, MINRES and Rombach algorithm.&lt;/li>
-&lt;li>[&lt;a href="https://core-periphery-detection-in-networks.readthedocs.io/en/latest/">doc&lt;/a>], [&lt;a href="https://github.com/skojaku/core-periphery-detection">source&lt;/a>], [&lt;a href="https://iopscience.iop.org/article/10.1088/1367-2630/aab547">paper&lt;/a>], [&lt;a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.052313">paper&lt;/a>]&lt;/li>
+&lt;li>Network inference from correlational data&lt;/li>
+&lt;li>[&lt;a href="https://scola.readthedocs.io/en/latest/">doc&lt;/a>], [&lt;a href="https://github.com/skojaku/scola">source&lt;/a>], [&lt;a href="https://arxiv.org/abs/1903.10805">paper&lt;/a>]&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>cpnet&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>A lightweight python library for detecting core-periphery structure in networks&lt;/li>
+&lt;li>[&lt;a href="https://core-periphery-detection.readthedocs.io/en/latest/index.html">doc&lt;/a>], [&lt;a href="https://github.com/skojaku/core-periphery-detection">source&lt;/a>], [&lt;a href="https://iopscience.iop.org/article/10.1088/1367-2630/aab547">paper&lt;/a>], [&lt;a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.052313">paper&lt;/a>]&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
