@@ -2,13 +2,20 @@
 &lt;h5 id="google-scholarhttpsscholargooglecomcitationsuseriywt4r4aaaajhlen">&lt;a href="https://scholar.google.com/citations?user=IyWt4R4AAAAJ&amp;amp;hl=en">Google Scholar&lt;/a>&lt;/h5>
 &lt;h2 id="preprints">Preprints&lt;/h2>
 &lt;ol>
-&lt;li>&lt;strong>Sadamori Kojaku&lt;/strong>, Giacomo Livan, and Naoki Masuda. Detecting citation cartels in journal networks.
+&lt;li>
+&lt;p>Dakota Murray, Jisung Yoon, &lt;strong>Sadamori Kojaku&lt;/strong>, Rodrigo Costas, Woo-Sung Jung, Staša Milojević, Yong-Yeol Ah&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://arxiv.org/abs/2012.02785">Preprint&lt;/a>]&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Giacomo Livan, and Naoki Masuda. Detecting citation cartels in journal networks.&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://arxiv.org/abs/2009.09097">Preprint&lt;/a>], [&lt;a href="https://github.com/skojaku/journal-citation-cartels">Code&lt;/a>]&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ol>
-&lt;h2 id="journal-papers">Journal papers&lt;/h2>
+&lt;h2 id="journal-papers-and-conference-proceedings-refereed">Journal papers and conference proceedings (refereed)&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Laurent Hébert-Dufresne, Enys Mones, Sune Lehmann, Yong-Yeol Ahn. The effectiveness of backward contact tracing in networks. Nature Physics (2021).&lt;/p>
@@ -65,13 +72,26 @@
 &lt;/ul>
 &lt;/li>
 &lt;li>
+&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Community change detection in dynamic networks in noisy environment. 24th International Conference on World Wide Web. Florence, Italy, May 18 - 22 (2015)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Structual change point detection for social networks. The World Congress on Engineering. London, the United Kingdom, July 3-5 (2013)&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>幸若 完壮&lt;/strong>, 渡辺 浩太, 五十嵐 一. 合理的な忘却型Profit Sharing強化学習法. 電気学会論文誌Ｃ, 132, 448-454 (2012)&lt;/p>
 &lt;ul>
 &lt;li>[&lt;a href="https://www.jstage.jst.go.jp/article/ieejeiss/132/3/132_3_448/_article/-char/ja/">Paper&lt;/a>]&lt;/li>
 &lt;/ul>
 &lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Kota Watanabe and Hajime Igarashi. Adaptive profit sharing reinforcement learning for dynamic environment. 10th International Conference on Machine Learning and Applications and Workshops. Hawaii, the United States (2011)&lt;/p>
+&lt;/li>
 &lt;/ol>
-&lt;h2 id="oral-presentations-and-posters">Oral presentations and posters&lt;/h2>
+&lt;h2 id="commentary">Commentary&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>幸若 完壮&lt;/strong>. 埋め込み法が拓くネットワーク科学の新展開. 特集号「複雑ネットワーク研究の最前線」 システム制御情報学会論文誌, 65, 5, 185-191 (2021).&lt;/li>
+&lt;/ol>
+&lt;h2 id="oral-presentations-and-posters-refereed">Oral presentations and posters (refereed)&lt;/h2>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>Sadamori Kojaku&lt;/strong>, Attila Varga, Xiaoran Yan, Filipi N. Silva, Staša Milojević, Alessandro Flammini, and Yong-Yeol Ahn. The landscape of the COVID-19 research: A neural embedding approach. Netsci. Rome, Italy, 17-25 September (2020)&lt;/p>
@@ -112,15 +132,10 @@
 &lt;li>
 &lt;p>Keigo Kimura, Mineichi Kudo, Lu Sun and &lt;strong>Sadamori Kojaku&lt;/strong>. Fast random k-labelsets for large-scale multi-label classification. 23rd International Conference on Pattern Recognition. Cancun, Mexico December 4-8 (2016)&lt;/p>
 &lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Community change detection in dynamic networks in noisy environment. 24th International Conference on World Wide Web. Florence, Italy, May 18 - 22 (2015)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Mineichi Kudo, Ichigaku Takigawa and Hideyuki Imai. Structual change point detection for social networks. The World Congress on Engineering. London, the United Kingdom, July 3-5 (2013)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Sadamori Koujaku&lt;/strong>, Kota Watanabe and Hajime Igarashi. Adaptive profit sharing reinforcement learning for dynamic environment. 10th International Conference on Machine Learning and Applications and Workshops. Hawaii, the United States (2011)&lt;/p>
-&lt;/li>
+&lt;/ol>
+&lt;h2 id="invited-talk">Invited talk&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>幸若完壮&lt;/strong>. ネットワークコアの検出アルゴリズムとその応用. ネットワーク科学セミナー. 統計数理研究所. 8.28-30 (2019)&lt;/li>
 &lt;/ol>
 &lt;h2 id="awards">Awards&lt;/h2>
 &lt;ol>
