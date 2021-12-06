@@ -1,20 +1,38 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on Home</title><link>https://example.org/tags/hugo/</link><description>Recent content in hugo on Home</description><generator>Hugo 0.64.0 -- gohugo.io</generator><language>en</language><managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor><webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster><copyright>Sadamori Kojaku — All rights reserved.</copyright><lastBuildDate>Wed, 02 Apr 2014 23:42:05 +0100</lastBuildDate><atom:link href="https://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo</title><link>https://example.org/posts/hugoisforlovers/</link><pubDate>Wed, 02 Apr 2014 23:42:05 +0100</pubDate><author>skojaku@iu.edu (Sadamori Kojaku)</author><guid isPermaLink="true">https://example.org/posts/hugoisforlovers/</guid><description>&lt;h2 id="step-1-install-hugo">Step 1. Install Hugo&lt;/h2>
-&lt;p>Go to &lt;a href="https://github.com/spf13/hugo/releases">Hugo releases&lt;/a> and download the
-appropriate version for your OS and architecture.&lt;/p>
-&lt;p>Save it somewhere specific as we will be using it in the next step.&lt;/p>
-&lt;p>More complete instructions are available at &lt;a href="https://gohugo.io/getting-started/installing/">Install Hugo&lt;/a>&lt;/p>
-&lt;h2 id="step-2-build-the-docs">Step 2. Build the Docs&lt;/h2>
-&lt;p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.&lt;/p>
-&lt;p>Follow the following steps:&lt;/p>
-&lt;ol>
-&lt;li>Clone the &lt;a href="https://github.com/spf13/hugo">Hugo repository&lt;/a>&lt;/li>
-&lt;li>Go into the repo&lt;/li>
-&lt;li>Run hugo in server mode and build the docs&lt;/li>
-&lt;li>Open your browser to http://localhost:1313&lt;/li>
-&lt;/ol>
-&lt;p>Corresponding pseudo commands:&lt;/p>
-&lt;pre>&lt;code>git clone https://github.com/spf13/hugo
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>hugo on Home</title>
+		<link>https://example.org/tags/hugo/</link>
+		<description>Recent content in hugo on Home</description>
+		<generator>Hugo 0.78.2 -- gohugo.io</generator>
+		<language>en</language>
+		<managingEditor>skojaku@iu.edu (Sadamori Kojaku)</managingEditor>
+		<webMaster>skojaku@iu.edu (Sadamori Kojaku)</webMaster>
+		<copyright>Sadamori Kojaku — All rights reserved.</copyright>
+		<lastBuildDate>Wed, 02 Apr 2014 23:42:05 +0100</lastBuildDate>
+		<atom:link href="https://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Getting Started with Hugo</title>
+			<link>https://example.org/posts/hugoisforlovers/</link>
+			<pubDate>Wed, 02 Apr 2014 23:42:05 +0100</pubDate>
+			<author>skojaku@iu.edu (Sadamori Kojaku)</author>
+			<guid isPermaLink="true">https://example.org/posts/hugoisforlovers/</guid>
+			<description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;Hugo releases&lt;/a&gt; and download the
+appropriate version for your OS and architecture.&lt;/p&gt;
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to http://localhost:1313&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
 cd hugo
 /path/to/where/you/installed/hugo server --source=./docs
 &amp;gt; 29 pages created
@@ -22,32 +40,37 @@ cd hugo
 &amp;gt; in 27 ms
 &amp;gt; Web Server is available at http://localhost:1313
 &amp;gt; Press ctrl+c to stop
-&lt;/code>&lt;/pre>
-&lt;p>Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p>
-&lt;h2 id="step-3-change-the-docs-site">Step 3. Change the docs site&lt;/h2>
-&lt;p>Stop the Hugo process by hitting Ctrl+C.&lt;/p>
-&lt;p>Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p>
-&lt;pre>&lt;code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-change-the-docs-site&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+&lt;p&gt;Stop the Hugo process by hitting Ctrl+C.&lt;/p&gt;
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
 &amp;gt; 29 pages created
 &amp;gt; 0 tags index created
 &amp;gt; in 27 ms
 &amp;gt; Web Server is available at http://localhost:1313
 &amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
 &amp;gt; Press ctrl+c to stop
-&lt;/code>&lt;/pre>
-&lt;p>Open your &lt;a href="http://vim.spf13.com">favorite editor&lt;/a> and change one of the source
-content pages. How about changing this very file to &lt;em>fix the typo&lt;/em>. How about changing this very file to &lt;em>fix the typo&lt;/em>.&lt;/p>
-&lt;p>Content files are found in &lt;code>docs/content/&lt;/code>. Unless otherwise specified, files
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
 are located at the same relative location as the url, in our case
-&lt;code>docs/content/overview/quickstart.md&lt;/code>.&lt;/p>
-&lt;p>Change and save this file.. Notice what happened in your terminal.&lt;/p>
-&lt;pre>&lt;code>&amp;gt; Change detected, rebuilding site
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
 &amp;gt; 29 pages created
 &amp;gt; 0 tags index created
 &amp;gt; in 26 ms
-&lt;/code>&lt;/pre>
-&lt;p>Refresh the browser and observe that the typo is now fixed.&lt;/p>
-&lt;p>Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p>
-&lt;h2 id="step-4-have-fun">Step 4. Have fun&lt;/h2>
-&lt;p>The best way to learn something is to play with it.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-have-fun&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+		</item>
+	</channel>
+</rss>
